@@ -1,0 +1,98 @@
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+.mainLayout {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 200px 200px 200px;
+  width: 620px;
+  min-height: 400px;
+  margin: 30px auto 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .mainLayout {
+    grid-template-columns: 200px 200px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mainLayout {
+    grid-template-columns: 200px;
+    width: 200px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-size: 30px;
+  background: #dcdcdc;
+  justify-content: flex-end;
+}
+
+.headerCount {
+  font-size: 30px;
+}
+.headerLink {
+  text-decoration: none;
+}
+
+.headerWrap {
+  width: 200px;
+}
+
+.MainLayout {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.MainLayout__block {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: 20px auto 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .MainLayout__block {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .MainLayout__block {
+    flex-direction: column;
+  }
+}
+
+.buttonsBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+}
+
+@media screen and (max-width: 600px) {
+  .buttonsBlock {
+    margin: 10px auto 0 auto;
+  }
+}
+
+.checkBox {
+  display: flex;
+  margin: 0 auto;
+}
+
+.paginationTop {
+  margin-top: 20px;
+}
