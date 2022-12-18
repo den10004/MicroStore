@@ -1,4 +1,4 @@
-import AddButton from "./AddButton";
+import "../App.css";
 
 function BasketCard({
   id,
@@ -49,7 +49,9 @@ function BasketCard({
         <span>Цена: {price}рублей</span>
       </div>
       <div style={cardsButton}>
-        <AddButton del={del} deleteBasket={deleteBasket} />
+        <button className="button colorRed" onClick={deleteBasket}>
+          Удалить
+        </button>
       </div>
     </div>
   );

@@ -1,16 +1,6 @@
-import AddButton from "./AddButton";
+import "../App.css";
 
-function Card({
-  id,
-  title,
-  image,
-  price,
-  brand,
-  setBasketArr,
-  basketArr,
-  del,
-  deleteBasket,
-}) {
+function Card({ id, title, image, price, brand, setBasketArr, basketArr }) {
   const cards = {
     border: "1px solid black",
     borderRadius: "10px",
@@ -48,7 +38,9 @@ function Card({
         <span>Цена: {price}рублей</span>
       </div>
       <div style={cardsButton}>
-        <AddButton addBasket={addBasket} />
+        <button className="button colorBlue" onClick={addBasket}>
+          Добавить
+        </button>
       </div>
     </div>
   );

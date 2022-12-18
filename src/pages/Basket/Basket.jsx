@@ -4,6 +4,7 @@ import React, { useContext } from "react";
 import { BasketContext } from "../../components/context";
 import axios from "axios";
 import "./Basket.css";
+import "../../App.css";
 
 function Basket() {
   const { basketArr, setBasketArr } = useContext(BasketContext);
@@ -57,7 +58,7 @@ function Basket() {
             <span>
               Стоимость товаров: <strong>{sumPrice} рублей</strong>
             </span>
-            <button className="button payButton buttonTop" onClick={payBasket}>
+            <button className="button colorGreen buttonTop" onClick={payBasket}>
               Оплатить
             </button>
           </div>

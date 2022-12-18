@@ -11,3 +11,18 @@
   height: 30px;
   font-weight: 700;
 }
+
+.colorRed {
+  color: white;
+  background-color: red;
+}
+
+.colorBlue {
+  color: white;
+  background-color: blue;
+}
+
+.colorGreen {
+  color: white;
+  background-color: green;
+}
